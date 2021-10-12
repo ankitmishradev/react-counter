@@ -1,14 +1,14 @@
 # React Counter
 
-A counter designed with reactJS.
+A counter designed with reactJS. This counter can be used as a coming soon countdown, product or event launch countdown, visitor counter, etc in react apps/projects.
 
 ## Usage
 
-This counter can be used as a-
+In react apps/projects, this counter can be used as a-
 
-- Coming soon counter in react apps.
-- Product or event launch time counter.
-- Visitor counter in react apps.
+- Coming soon countdown timer.
+- Product or event launch countdown timer.
+- Visitor counter, etc.
 
 ## How to use
 
