@@ -1,5 +1,3 @@
-// This is main file that is responsible for react counter.
-
 import React from "react";
 import moment from "moment";
 

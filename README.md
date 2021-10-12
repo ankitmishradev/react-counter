@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# React Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A counter designed with reactJS.
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+This counter can be used as a-
 
-### `yarn start`
+- Coming soon counter in react apps.
+- Product or event launch time counter.
+- Visitor counter in react apps.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to use
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Follow the below instructions to use this counter in your react project-
 
-### `yarn test`
+- Add `moment` package as a dependency to your react app, this package is very useful in formatting date and times. Feel free to ignore `moment` only if you can parse date and times on your own.
+- Find `src/Counter.js` file and find the class named `ReactCounter` in this file. Grab the code of `ReactCounter` class.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
+class ReactCounter extends React.Component {
+    ...
+```
 
-### `yarn build`
+- Paste the code in your react project and write two imports as given below-
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+import React from "react";
+import moment from "moment";
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🎉 _Happy Coding!_ 🎉
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<footer>
+<div align="center">
+Made with ❤️ by <b>Ankit Mishra</b>.
+</div>
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+<a href="https://github.com/ankitmishradev" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/github.png" height="32px" width="32px" alt="github"/>
+</a>
+<a href="https://www.linkedin.com/in/ankitmishradev/" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/linked-in.png" height="32px" width="32px" alt="linked-in"/>
+</a>
+<a href="https://codepen.io/ankitmishradev" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/codepen.png" height="32px" width="32px" alt="codepen"/>
+</a>
+<a href="https://www.facebook.com/profile.php?id=100008455744534" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/facebook.png" height="32px" width="32px" alt="facebook"/>
+</a>
+<a href="https://twitter.com/iankitmi" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/twitter.png" height="32px" width="32px" alt="twitter"/>
+</a>
+<a href="https://www.instagram.com/iankitmi/" target="blank">
+    <img src="https://raw.githubusercontent.com/ankitmishradev/awesome-icons/main/social/png/instagram.png" height="32px" width="32px" alt="instagram" />
+</a>
+</div>
+</footer>
