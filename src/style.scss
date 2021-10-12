@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Alegreya", serif;
+}
+
+@mixin dimension($width, $height: $width) {
+  @if $width == cover {
+    height: 100%;
+    width: 100%;
+  } @else {
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin display($params) {
+  @if $params == flex {
+    @include prefix(display, flex);
+  } @else {
+    display: block;
+  }
+}
+
+@mixin flex(
+  $align-items,
+  $justify-content: $align-items,
+  $flex-direction: row
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+@mixin media($size) {
+  @if $size == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == miniPhone {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+}
+
+.react-counter-page {
+  @include dimension(cover);
+  @include flex(stretch, center, $flex-direction: column);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: rgb(215, 215, 215);
+  letter-spacing: 1.5px;
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to right, #1f1c18, #8e0e00);
+  background: linear-gradient(to right, #1f1c18, #8e0e00);
+}
+
+.react-counter {
+  flex-basis: 100%;
+  position: relative;
+  @include flex(center);
+}
+
+.react-counter-block {
+  @include dimension(100px);
+  @include flex(center);
+  flex-direction: column;
+  margin: 0 10px;
+  position: relative;
+  padding: 10px;
+  @include media(tablet) {
+    @include dimension(90px);
+  }
+  @include media(phone) {
+    @include dimension(80px);
+    margin: 5px;
+  }
+  @include media(miniPhone) {
+    @include dimension(70px);
+  }
+
+  .react-counter-title {
+    color: rgba(216, 216, 216, 0.637);
+  }
+
+  .react-counter-value {
+    line-height: 30px;
+    font-size: 40px;
+    margin-bottom: 5px;
+    @include media(phone) {
+      font-size: 30px;
+      line-height: 20px;
+    }
+  }
+
+  .react-counter-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include dimension(cover);
+  }
+}
