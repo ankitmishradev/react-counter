@@ -2,6 +2,8 @@
 
 A counter designed with reactJS. This counter can be used as a coming soon countdown, product or event launch countdown, visitor counter, etc in react apps/projects.
 
+> View this [pen](https://codepen.io/ankitmishradev/pen/OJjPBoK) to see it in action.
+
 ## Usage
 
 In react apps/projects, this counter can be used as a-
